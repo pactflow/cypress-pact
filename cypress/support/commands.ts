@@ -105,7 +105,6 @@ export function startFakeServer({
     cors,
     port
   });
-
   return pactFakeServer;
 }
 

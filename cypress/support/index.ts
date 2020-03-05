@@ -12,13 +12,7 @@
 // You can read more here:
 // https://on.cypress.io/configuration
 // ***********************************************************
-
-// Import commands.ts
 import "./commands";
-// import 'cypress-failed-log'
-
-// Alternatively you can use CommonJS syntax:
-// require('./commands')
 
 beforeEach(() => {
   cy.log("Test Started");
@@ -27,16 +21,6 @@ beforeEach(() => {
 afterEach(() => {
   cy.log("Test Completed");
   cy.verifyAndResetAllFakeServers();
-});
-
-before(() => {
-  cy.log("Test Suite Started");
-  cy.startFakeServer({
-    consumer: "test-app",
-    provider: "reqres",
-    cors: true,
-    port: 5006
-  });
 });
 
 after(() => {

@@ -6,7 +6,21 @@ const response = {
   body: "dib dab dob"
 };
 
+const port = Math.floor((Math.random() * 49151) + 1024);
+
+
 describe("Testing pact", () => {
+
+  before(() => {
+    cy.log("Test Suite Started");
+    cy.startFakeServer({
+      consumer: "test-app",
+      provider: "reqres",
+      cors: true,
+      port
+    });
+  });
+
   it("adds an interaction", () => {
     cy.addInteraction({
       provider: "reqres",
@@ -33,7 +47,7 @@ describe("Testing pact", () => {
       };
     }).as("comment");
 
-    cy.request("http://localhost:5006/comments/1");
+    cy.request(`http://localhost:${port}/comments/1`);
 
     cy.visit("https://example.cypress.io/commands/network-requests");
 
