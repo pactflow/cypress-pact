@@ -1,0 +1,64 @@
+{
+  "name": "cypress-pact",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "author": "Yousaf Nabi",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/you54f/cypress-pact.git"
+  },
+  "scripts": {
+    "lint": "tslint --project .",
+    "lint-fix": "tslint --project . --fix",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "test:cypress:serve": "serve --listen 13370 ./cypress/fixtures/test-app",
+    "test:cypress:run": "wait-port --timeout 10000 localhost:13370 && cypress run",
+    "test:cypress:open": "wait-port --timeout 10000 localhost:13370 && cypress open",
+    "test:cypress:dev": "npm-run-all --silent --parallel --race test:cypress:serve test:cypress:open",
+    "test:cypress": "npm-run-all --silent --parallel --race test:cypress:serve test:cypress:run"
+  },
+  "dependencies": {
+    "@cypress/webpack-preprocessor": "4.1.3",
+    "@pact-foundation/pact": "^9.8.0",
+    "@pact-foundation/pact-web": "^9.8.0",
+    "@testing-library/cypress": "5.3.0",
+    "@types/node": "10.17.17",
+    "cypress": "4.1.0",
+    "cypress-multi-reporters": "1.2.3",
+    "husky": "4.2.3",
+    "lint-staged": "10.0.8",
+    "mocha": "7.1.0",
+    "mocha-junit-reporter": "1.23.3",
+    "npm-run-all": "4.1.5",
+    "prettier": "1.19.1",
+    "serve": "11.3.0",
+    "ts-loader": "6.2.1",
+    "ts-node": "8.6.2",
+    "tslint": "5.20.1",
+    "tslint-config-prettier": "1.18.0",
+    "tslint-no-focused-test": "0.5.0",
+    "typescript": "3.8.3",
+    "wait-port": "0.2.7",
+    "webpack": "4.42.0"
+  },
+  "lint-staged": {
+    "cypress/**/*.ts": [
+      "prettier --write",
+      "tslint --fix",
+      "git add"
+    ],
+    "scripts/**/*.ts": [
+      "prettier --write",
+      "tslint --fix",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}
