@@ -774,10 +774,10 @@
     "@types/yargs" "^15.0.0"
     chalk "^3.0.0"
 
-"@pact-foundation/pact-node@^10.5.0":
-  version "10.5.0"
-  resolved "https://registry.yarnpkg.com/@pact-foundation/pact-node/-/pact-node-10.5.0.tgz#2b36e72b6de8722b3faeb3bb2bd77adab0701bb9"
-  integrity sha512-mzmoWTDTngY+XW1EHyBFZWLgjEUcsKrX6+YJB1wR2ivQOf0DO9eF3Z1z/DSl1JqxWbpktZUCpLxLLuCGLl/tIg==
+"@pact-foundation/pact-node@^10.6.0":
+  version "10.6.0"
+  resolved "https://registry.yarnpkg.com/@pact-foundation/pact-node/-/pact-node-10.6.0.tgz#5fafe3cdf342c24747d0c60c5e69d56d9649854a"
+  integrity sha512-hk8V5TuOg764Go5nBRG9C3MX3VWuyPQppezhSGBkWfP6VIyEaj6qYfYru3PQAtl2gEhESMd5wRDei5VGex9APg==
   dependencies:
     "@types/q" "1.0.7"
     "@types/request" "2.48.2"
@@ -786,7 +786,8 @@
     chalk "2.3.1"
     check-types "7.3.0"
     cross-spawn "^7.0.1"
-    mkdirp "0.5.1"
+    libnpmconfig "^1.2.1"
+    mkdirp "1.0.0"
     q "1.5.1"
     request "2.87.0"
     rimraf "2.6.2"
@@ -802,12 +803,12 @@
   resolved "https://registry.yarnpkg.com/@pact-foundation/pact-web/-/pact-web-9.8.0.tgz#cc1d08a0014069fba7de5071be650fc40079d575"
   integrity sha512-xaBBdxzRbRQK3A3TotHynEQ1KpCnWxy/OALUjjUE6n+rwj5cIJcvoOsF+Mo6/kUkd7EbXEmS07LHsgpBVOJFZQ==
 
-"@pact-foundation/pact@9.8.0":
-  version "9.8.0"
-  resolved "https://registry.yarnpkg.com/@pact-foundation/pact/-/pact-9.8.0.tgz#37c0b264e617e14e5cb4c5ec7c6ce7a1a8b0717a"
-  integrity sha512-z7fYpTfW1vdanOedpZhjlUjjivvft0KjKE3Dp98qoSR/wxSGc0okDSQbn7sSt3FXlFfuK8DItxLWRSM9zVHwkA==
+"@pact-foundation/pact@9.8.1":
+  version "9.8.1"
+  resolved "https://registry.yarnpkg.com/@pact-foundation/pact/-/pact-9.8.1.tgz#4c20d8bffd76a5f5799dbf3ddfba426efca5e535"
+  integrity sha512-IiSiPoBIyAWUO7mth1QcrcnTsLem0aO1xXi454qze9+bKpZDv1k1t38qx8wgZtqq+b6YWxVpifFmk2uFelgRhw==
   dependencies:
-    "@pact-foundation/pact-node" "^10.5.0"
+    "@pact-foundation/pact-node" "^10.6.0"
     "@types/bluebird" "^3.5.20"
     "@types/bunyan" "^1.8.3"
     "@types/express" "^4.11.1"
@@ -3596,7 +3597,7 @@ inherits@2.0.3:
   resolved "https://registry.yarnpkg.com/inherits/-/inherits-2.0.3.tgz#633c2c83e3da42a502f52466022480f4208261de"
   integrity sha1-Yzwsg+PaQqUC9SRmAiSA9CCCYd4=
 
-ini@^1.3.4, ini@~1.3.0:
+ini@^1.3.4, ini@^1.3.5, ini@~1.3.0:
   version "1.3.5"
   resolved "https://registry.yarnpkg.com/ini/-/ini-1.3.5.tgz#eee25f56db1c9ec6085e0c22778083f596abf927"
   integrity sha512-RZY5huIKCMRWDUqZlEi72f/lmXKMvuszcMBduliQ3nnWbx9X/ZBQO7DijMEYS9EhHBb2qacRUMtC7svLwe0lcw==
@@ -3999,6 +4000,15 @@ levenary@^1.1.1:
   integrity sha512-mkAdOIt79FD6irqjYSs4rdbnlT5vRonMEvBVPVb3XmevfS8kgRXwfes0dhPdEtzTWD/1eNE/Bm/G1iRt6DcnQQ==
   dependencies:
     leven "^3.1.0"
+
+libnpmconfig@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/libnpmconfig/-/libnpmconfig-1.2.1.tgz#c0c2f793a74e67d4825e5039e7a02a0044dfcbc0"
+  integrity sha512-9esX8rTQAHqarx6qeZqmGQKBNZR5OIbl/Ayr0qQDy3oXja2iFVQQI81R6GZ2a02bSNZ9p3YOGX1O6HHCb1X7kA==
+  dependencies:
+    figgy-pudding "^3.5.1"
+    find-up "^3.0.0"
+    ini "^1.3.5"
 
 lines-and-columns@^1.1.6:
   version "1.1.6"
@@ -4455,6 +4465,11 @@ mkdirp@0.5.1, "mkdirp@>=0.5 0", mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.1:
   integrity sha1-MAV0OOrGz3+MR2fzhkjWaX11yQM=
   dependencies:
     minimist "0.0.8"
+
+mkdirp@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-1.0.0.tgz#8487b07699b70c9b06fce47b3ce28d8176c13c75"
+  integrity sha512-4Pb+8NJ5DdvaWD797hKOM28wMXsObb4HppQdIwKUHFiB69ICZ4wktOE+qsGGBy7GtwgYNizp0R9KEy4zKYBLMg==
 
 mocha-junit-reporter@1.23.3:
   version "1.23.3"
