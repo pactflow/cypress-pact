@@ -798,10 +798,10 @@
     unzipper "^0.10.10"
     url-join "^4.0.0"
 
-"@pact-foundation/pact-web@9.8.2":
-  version "9.8.2"
-  resolved "https://registry.yarnpkg.com/@pact-foundation/pact-web/-/pact-web-9.8.2.tgz#483b967a2ab610625626a31f5a69a466848b950c"
-  integrity sha512-Imlv/Phy4tsJVnNHpVYQMoB4et8XkrDXvWkEu4yiw8blRsy6cmhe1+SqmSu+SSejQUkUG4F+WEaz2ImLT8ewEg==
+"@pact-foundation/pact-web@9.9.2":
+  version "9.9.2"
+  resolved "https://registry.yarnpkg.com/@pact-foundation/pact-web/-/pact-web-9.9.2.tgz#4c78891da4daf05e39a4584ba7cf9049d182354c"
+  integrity sha512-W9EylOgPJVmpa/5SETSwiI9+htQ6YypqByaGeaKMy4UK3WHWcW2xvzmXVB7MbS5S5cRjLWdSVhgdTui6ZFPvHw==
 
 "@pact-foundation/pact@9.9.2":
   version "9.9.2"
