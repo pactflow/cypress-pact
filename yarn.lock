@@ -829,10 +829,10 @@
   resolved "https://registry.yarnpkg.com/@pact-foundation/pact-web/-/pact-web-9.9.3.tgz#1d87b632858ccf2e04a71dab376ad090637b1ff5"
   integrity sha512-lkrM8HRro0G1iYXmNdMwJJURpmvxCP1Y7zJCumOg29q/IS+Cz6stXVOJSPWpZ0ajb9xFH1c00JOeuZC97fSIJA==
 
-"@pact-foundation/pact@9.9.3":
-  version "9.9.3"
-  resolved "https://registry.yarnpkg.com/@pact-foundation/pact/-/pact-9.9.3.tgz#6fc50d3eb695310fa9b56773214aed703cf8a5d3"
-  integrity sha512-/yvraZATNw1YNDpv1AjQhy8KQz+qcqTwqU1pGQLoC1g2rjGixqgQEWxnTpqj3NiQlerMCsLp3os+mUJ+FFKuKA==
+"@pact-foundation/pact@9.9.5":
+  version "9.9.5"
+  resolved "https://registry.yarnpkg.com/@pact-foundation/pact/-/pact-9.9.5.tgz#62840cad404da9b9ae1733793c31324613f20db9"
+  integrity sha512-LI3Rv6GK2Vbf+8v//9XFJwlGeHvvTQPqn4By7iuXTsPa/05YxsGFjV2+CRG/HbbW15xmFmEqSxwWpj6hyTil9A==
   dependencies:
     "@pact-foundation/pact-node" "^10.9.0"
     "@types/bluebird" "^3.5.20"
