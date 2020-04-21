@@ -42,7 +42,7 @@
     "tslint-no-focused-test": "0.5.0",
     "typescript": "3.8.3",
     "wait-port": "0.2.7",
-    "webpack": "4.42.1"
+    "webpack": "4.43.0"
   },
   "lint-staged": {
     "cypress/**/*.ts": [
