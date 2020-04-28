@@ -26,7 +26,7 @@
     "@pact-foundation/pact-web": "9.10.0",
     "@testing-library/cypress": "5.3.1",
     "@types/node": "10.17.20",
-    "cypress": "4.4.1",
+    "cypress": "4.5.0",
     "cypress-multi-reporters": "1.2.4",
     "husky": "4.2.5",
     "lint-staged": "10.2.0",
