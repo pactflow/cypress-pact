@@ -21,7 +21,7 @@
     "test:cypress": "npm-run-all --silent --parallel --race test:cypress:serve test:cypress:run"
   },
   "dependencies": {
-    "@cypress/webpack-preprocessor": "4.1.5",
+    "@cypress/webpack-preprocessor": "5.2.0",
     "@pact-foundation/pact": "9.10.0",
     "@pact-foundation/pact-web": "9.10.0",
     "@testing-library/cypress": "5.3.1",
