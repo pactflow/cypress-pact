@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   test:
     docker:
-      - image: cypress/base:12.16.2
+      - image: cypress/base:12.18.0
         environment:
           TERM: xterm
     working_directory: ~/app
